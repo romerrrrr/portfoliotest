@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react'
 import { useId } from "react"
 import { cn } from "@/lib/utils"
@@ -56,7 +54,7 @@ function DotPattern({
   )
 }
 
-export function BlackBackgroundWithDots() {
+export default function Home() {
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-black">
       <h1 className="z-10 text-center text-5xl font-medium tracking-tighter text-white">
@@ -74,13 +72,5 @@ export function BlackBackgroundWithDots() {
         cr={1}
       />
     </div>
-  )
-}
-
-export default function Home() {
-  return (
-    <main>
-      <BlackBackgroundWithDots/>
-    </main>
   )
 }
